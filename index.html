@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brushify</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <center
+        <h1>Brushify</h1>
+        <div id="editor" contenteditable="true"></div>
+        <button id="download-btn" type="button">Download</button>
+
+       <div id="controls">
+            
+            <div class = bgcolors>
+                <h2 class="head">Choose Background Color</h2>
+                <button onclick="changeBackgroundColor('red')" class="bgc" style="background-color:red;"></button>
+                <button onclick="changeBackgroundColor('blue')" class="bgc"  style="background-color:blue;"></button>
+                <button onclick="changeBackgroundColor('green')" class="bgc"  style="background-color:green;"></button>
+                <button onclick="changeBackgroundColor('yellow')" class="bgc"  style="background-color:yellow;" ></button>
+                <button onclick="changeBackgroundColor('orange')" class="bgc"  style="background-color:orange;"></button>
+            </div>
+       
+            
+            <div class = bgcolors>
+                <h2 class="head">Choose Font Family</h2>
+                <button onclick="changeFontFamily('Arial')">Arial</button>
+                <button onclick="changeFontFamily('Verdana')">Verdana</button>
+                <button onclick="changeFontFamily('Times New Roman')" >Times New Roman</button>
+                <button onclick="changeFontFamily('Courier New')">Courier New</button>
+            </div>
+            
+            <div class = bgcolors>
+                <h2 class="head">Choose Font Color</h2>
+                <button onclick="changeFontColor('black')" class="bgc" style="background-color:black;"></button>
+                <button onclick="changeFontColor('yellow')" class="bgc"  style="background-color:yellow;"></button>
+                <button onclick="changeFontColor('gray')" class="bgc"  style="background-color:gray;"></button>
+                <button onclick="changeFontColor('purple')" class="bgc"  style="background-color:purple;" ></button>
+                <button onclick="changeFontColor('pink')" class="bgc"  style="background-color:pink;"></button>
+            </div>
+   <center>
+
+    <script>
+        function changeBackgroundColor(clr) {
+        document.getElementById('editor').style.backgroundColor=clr 
+        }
+
+        function changeFontFamily(font) {
+        document.getElementById('editor').style.fontFamily=font
+        }
+        function changeFontColor(color) {
+        document.getElementById('editor').style.color=color
+        }
+    </script>
+</body>
+</html>
